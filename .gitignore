@@ -1,3 +1,5 @@
 *.pdf
 .env
 app.js
+src/
+legacy/
