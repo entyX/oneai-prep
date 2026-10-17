@@ -187,6 +187,11 @@ textarea.inp{resize:vertical;line-height:1.5}
 .dots{display:inline-flex;gap:3px;align-items:center}
 .dots i{width:6px;height:6px;border-radius:50%;background:var(--line-2)}
 .dots i.on{background:var(--text-2)}
+.dtag{display:inline-flex;align-items:center;gap:3px;font-size:11px;font-weight:600;padding:1px 8px 1px 7px;border-radius:99px;border:1px solid var(--line);white-space:nowrap;flex-shrink:0;color:var(--dc);background:color-mix(in oklab,var(--dc) 10%,var(--surface));border-color:color-mix(in oklab,var(--dc) 28%,var(--surface))}
+.dtag i{width:5px;height:5px;border-radius:50%;background:color-mix(in oklab,var(--dc) 25%,var(--surface))}
+.dtag i.on{background:var(--dc)}
+.dtag i:last-of-type{margin-right:3px}
+.dtag.d1{--dc:var(--ok)} .dtag.d2{--dc:var(--accent)} .dtag.d3{--dc:var(--warn)} .dtag.d4{--dc:var(--bad)}
 .kv{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:8px;margin:12px 0}
 .kv>div{background:var(--bg-2);border:1px solid var(--line);border-radius:8px;padding:8px 11px;display:flex;flex-direction:column;gap:2px;min-width:0}
 .kv span{font-size:12px;color:var(--muted)}
