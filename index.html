@@ -641,6 +641,46 @@ body.locked .gate{display:flex}
 .gate-card input:focus{border-color:var(--accent);box-shadow:0 0 0 3px var(--accent-soft)}
 .gate-card .btn{width:100%;margin-top:20px;height:38px}
 .gate-err{min-height:20px;margin-top:12px;font-size:13px;color:var(--bad)}
+/* TSA test highlights, practice test card, tiebreakers, study guide */
+.tsa-tag{display:inline-flex;align-items:center;gap:4px;font-size:11px;font-weight:600;padding:2px 8px;border-radius:99px;color:var(--accent-2);background:var(--accent-soft);border:1px solid var(--accent-line);white-space:nowrap;margin-left:auto;margin-right:6px}
+.tsa-note{display:flex;gap:8px;align-items:flex-start;font-size:12.5px;color:var(--text-2);margin:0 0 8px;padding:8px 10px;border-radius:8px;background:var(--accent-soft);border:1px solid var(--accent-line)}
+.tsa-note .ic{color:var(--accent);margin-top:2px;flex-shrink:0}
+.urow.tsa{background:color-mix(in oklab,var(--accent-soft) 70%,transparent);box-shadow:inset 3px 0 0 var(--accent);padding-left:10px}
+.urow.tsa:hover{background:var(--accent-soft)}
+.urow:not(.tsa){opacity:.62}
+.urow:not(.tsa):hover{opacity:1}
+.tsa-part{color:var(--accent-2);font-weight:600}
+.ucard.tsa{border-color:var(--accent-line);box-shadow:0 0 0 1px var(--accent-line)}
+.tsa-feature{border-color:var(--accent-line);background:linear-gradient(180deg,var(--accent-soft),var(--surface) 70%);margin-bottom:16px}
+.tsa-f-top{display:flex;gap:14px;align-items:flex-start;margin-bottom:12px}
+.tsa-f-top h3{font-size:17px;margin:2px 0 4px}
+.tsa-f-top p{margin:0;max-width:720px}
+.tsa-f-i{display:grid;place-items:center;width:40px;height:40px;border-radius:10px;background:var(--accent);color:#fff;flex-shrink:0}
+.tsa-parts{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:14px}
+.tsa-parts span{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:3px 10px 3px 4px;border-radius:99px;background:var(--surface);border:1px solid var(--line)}
+.tsa-parts b{display:grid;place-items:center;width:18px;height:18px;border-radius:99px;background:var(--accent);color:#fff;font-size:10.5px}
+.tb-item{padding:14px 0;border-top:1px solid var(--line)}
+.tb-item:first-of-type{border-top:0}
+.tb-q{font-size:14px;line-height:1.55;margin-bottom:10px}
+.tb-in{width:100%;resize:vertical;font:inherit;font-size:14px;line-height:1.5;min-height:96px}
+.tb-key{margin-top:8px}
+.tb-key summary{cursor:pointer;font-size:13px;font-weight:550;color:var(--accent-2)}
+.tb-ans{font-size:14px;line-height:1.6;margin-top:8px}
+.sg-toc{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin-bottom:16px}
+.sg-toc a{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:var(--surface);color:var(--text);text-decoration:none}
+.sg-toc a:hover{border-color:var(--accent-line);background:var(--accent-soft)}
+.sg-toc b{font-size:12px;color:var(--accent-2)}
+.sg-toc span{font-size:13px;font-weight:550}
+.sg-toc small{font-size:11.5px;color:var(--muted)}
+.sg-part{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:20px 22px;margin:16px 0;scroll-margin-top:72px;position:relative;overflow:hidden}
+.sg-part::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--uc)}
+.sg-h{display:flex;gap:14px;align-items:flex-start;margin-bottom:4px}
+.sg-h h2{font-size:21px;margin:2px 0 4px;letter-spacing:-.02em}
+.sg-h p{margin:0}
+.sg-part .prose{max-width:none}
+.sg-more{display:flex;flex-wrap:wrap;gap:6px;align-items:center;border-top:1px solid var(--line);padding-top:12px;margin-top:8px}
+@media (max-width:640px){.sg-part{padding:16px}.tsa-tag{display:none}.tsa-f-top{flex-direction:column}}
+@media print{.sg-toc,.sg-more,.ph-r,.tsa-note{display:none!important}.sg-part{break-inside:auto;border:0;padding:0}.content{max-width:none}}
 </style>
 </head>
 <body class="locked">
